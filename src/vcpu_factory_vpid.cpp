@@ -1,5 +1,5 @@
 #include <bfvmm/vcpu/vcpu_factory.h>
-#include <bfvmm/vcpu/arch/intel_x64/vcpu.h>
+#include <bfvmm/hve/arch/intel_x64/vcpu/vcpu.h>
 
 using namespace ::intel_x64::vmcs;
 
@@ -22,7 +22,6 @@ public:
     }
 
     ~vcpu() override = default;
-    { }
 };
 
 }
